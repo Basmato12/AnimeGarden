@@ -1,0 +1,554 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr 280px;
+        gap: 1.5rem;
+    }
+    
+    .articles-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    
+    .database-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        grid-column: 1;
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    
+    .slider-container {
+        height: 400px;
+    }
+    
+    .slide-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .header-top {
+        flex-wrap: wrap;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .filter-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+        width: 100%;
+    }
+    
+    body {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .header-top {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .main-nav.active {
+        display: block;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        left: 0;
+        background: var(--bg-white);
+        box-shadow: var(--shadow);
+        z-index: 1000;
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        width: 100%;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
+        border-top: none;
+        white-space: normal;
+    }
+    
+    .main-nav li {
+        border-bottom: 1px solid var(--border-light);
+    }
+    
+    .main-nav a {
+        display: block;
+        padding: 1rem;
+    }
+    
+    .articles-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .sidebar {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .slider-container {
+        height: 300px;
+    }
+    
+    .slide-content {
+        padding: 1rem;
+    }
+    
+    .slide-content h2 {
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
+    
+    .slide-content p {
+        display: none;
+    }
+    
+    .slider-nav {
+        display: none;
+    }
+    
+    .article-content,
+    .sidebar-widget {
+        padding: 1rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .database-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo span {
+        font-size: 0.8rem;
+    }
+    
+    .header-actions {
+        gap: 0.5rem;
+    }
+    
+    .slider-container {
+        height: 250px;
+    }
+    
+    .slide-content h2 {
+        font-size: 1.1rem;
+    }
+    
+    .read-more {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .article-content {
+        padding: 0.8rem;
+    }
+    
+    .article-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .sidebar-widget {
+        padding: 1rem;
+    }
+    
+    .popular-post {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .rank {
+        align-self: center;
+    }
+    
+    body {
+        min-width: 320px;
+    }
+    
+    .article-content h3,
+    .slide-content h2 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .page-header {
+        padding: 2rem 0;
+    }
+    
+    .database-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pagination {
+        flex-wrap: wrap;
+    }
+    
+    .filter-group {
+        margin-bottom: 1rem;
+    }
+    
+    .anime-content,
+    .manga-content {
+        padding: 1rem;
+    }
+    
+    .anime-content h3,
+    .manga-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .articles-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        grid-template-columns: 1fr;
+    }
+    
+    .slide-content h2 {
+        font-size: 1rem;
+    }
+    
+    .category-tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header p {
+        font-size: 0.9rem;
+    }
+    
+    .breadcrumb ol {
+        font-size: 0.8rem;
+    }
+    
+    .filter-select {
+        padding: 0.7rem;
+    }
+    
+    .anime-image,
+    .manga-image {
+        height: 250px;
+    }
+    
+    .team-member {
+        padding: 1rem;
+    }
+    
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Height-based media queries for mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .slider-container {
+        height: 300px;
+    }
+    
+    .header {
+        position: relative;
+    }
+    
+    .main-nav.active {
+        height: calc(100vh - 60px);
+        top: 60px;
+    }
+    
+    .page-header {
+        padding: 2rem 0;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .content-wrapper {
+        grid-template-columns: 1fr 250px;
+        gap: 1.5rem;
+    }
+    
+    .articles-container {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .sidebar-widget {
+        padding: 1rem;
+    }
+}
+
+/* High-resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .article-image img,
+    .anime-image img,
+    .manga-image img,
+    .slide img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .slide {
+        transition: none;
+    }
+    
+    .article-card,
+    .anime-card,
+    .manga-card {
+        transition: none;
+    }
+}
+
+/* Dark mode system preference */
+@media (prefers-color-scheme: dark) {
+    :root:not(.light-mode):not(.dark-mode) {
+        --primary: #8b5cf6;
+        --primary-dark: #7c3aed;
+        --secondary: #3b82f6;
+        --accent: #ec4899;
+        --text-dark: #f7fafc;
+        --text-light: #cbd5e0;
+        --bg-light: #2d3748;
+        --bg-white: #1a202c;
+        --bg-dark: #0f1419;
+        --bg-card-dark: #374151;
+        --border-light: #4a5568;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .featured-slider,
+    .sidebar,
+    .footer,
+    .scroll-to-top,
+    .search-overlay,
+    .breadcrumb,
+    .pagination,
+    .database-filters {
+        display: none !important;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr !important;
+        display: block !important;
+    }
+    
+    .articles-container {
+        grid-template-columns: 1fr !important;
+        display: block !important;
+    }
+    
+    .database-grid {
+        grid-template-columns: 1fr !important;
+        display: block !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: black !important;
+        background: white !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+    
+    .article-card,
+    .anime-card,
+    .manga-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        margin-bottom: 1rem;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    
+    .main-content {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    .page-header {
+        background: white !important;
+        color: black !important;
+        padding: 1rem 0 !important;
+    }
+    
+    .page-header h1 {
+        color: black !important;
+        font-size: 18pt !important;
+    }
+    
+    .page-header p {
+        color: #666 !important;
+        font-size: 12pt !important;
+    }
+    
+    /* Ensure links show URLs */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: #666;
+    }
+    
+    /* Don't show URLs for internal links */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+}
+
+/* Very large screens */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr 350px;
+    }
+    
+    .articles-container {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+    
+    .database-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+/* Ultra-wide screens */
+@media (min-width: 2000px) {
+    .container {
+        max-width: 1800px;
+    }
+    
+    .articles-container {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+    
+    .database-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}

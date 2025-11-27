@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff4500">
+    <meta name="description" content="تفاصيل الخبر - Anime Garden">
+    <title>التصنيف الأسبوعي - Anime Garden</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="apple-touch-icon" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+        .news-detail-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .dark-mode .news-detail-container {
+            background: #2d3748;
+            color: #f7fafc;
+        }
+
+        .news-detail-header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1rem;
+        }
+
+        .news-detail-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .dark-mode .news-detail-title {
+            color: #ff6b35;
+        }
+
+        .news-meta {
+            display: flex;
+            gap: 2rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .dark-mode .news-meta {
+            color: #a0aec0;
+        }
+
+        .news-image-gallery {
+            margin: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .news-image-gallery img {
+            width: 100%;
+            border-radius: var(--radius);
+            transition: transform 0.3s ease;
+        }
+
+        .news-image-gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        .news-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        .dark-mode .news-content {
+            color: #cbd5e0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #ff4500, #ff6b35);
+            color: white;
+            border-radius: var(--radius);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 69, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Anime Garden</h1>
+                        <span>بوابة الأنمي والمانجا العربية</span>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-pressed="false" aria-label="تبديل الوضع الداكن">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                    <button class="search-toggle" aria-label="فتح البحث">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../news.html">أخبار</a></li>
+                    <li><a href="../about.html">عن الموقع</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="news-detail-container">
+        <article>
+            <div class="news-detail-header">
+                <h1 class="news-detail-title">التصنيف الأسبوعي</h1>
+                <div class="news-meta">
+                    <span><i class="far fa-calendar"></i> 25/11/2025</span>
+                    <span><i class="fas fa-user"></i> فريق التحرير</span>
+                    <span><i class="fas fa-tag"></i> تقييمات</span>
+                </div>
+            </div>
+
+            <div class="news-content">
+                <p><strong>📈 جميع التقييمات مبنية على أحدث تقييمات منصة IMDb.</strong></p>
+
+                <p><strong>🔥 أبرز التطورات هذا الأسبوع</strong></p>
+
+                <p><strong>ارتفاع ⬆️: My Hero Academia: الموسم الأخير</strong><br>
+                لا تزال تسيطر بلا منازع، حيث قدّمت حلقة جديدة حصلت على تقييم 9.5، مؤكدة أن القوس النهائي يُعد من أفضل لحظات المسلسل على الإطلاق.</p>
+
+                <p><strong>استقرار →: Kingdom 6</strong><br>
+                تواصل مسيرتها بثبات مذهل عند مستوى 9.0+، حيث حلقت الحلقة الأخيرة بتقييم 9.3. هذا المسلسل ببساطة لا يخطئ.</p>
+
+                <p><strong>تعافٍ ↗️: SPY x FAMILY 3</strong><br>
+                عادت لاستعادة زخمها بحلقة قوية حصلت على 8.4، بعد أسابيع من التذبذب. يبدو أن الموسم قد عاد إلى مساره الصحيح!</p>
+
+                <p><strong>انهيار ⬇️: One Punch Man 3</strong><br>
+                على الجانب الآخر، يعيش المسلسل أسوأ لحظاته: حيث هبطت تقييمات أحدث حلقة إلى 3.0، وهو أدنى تقييم في الموسم حتى الآن. الاستقبال الجماهيري لا يزال سلبيًا للغاية.</p>
+
+                <div class="news-image-gallery">
+                    <img src="imagesdetail/image7 (1).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (2).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (3).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (4).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (5).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (6).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (7).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (8).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (9).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (10).jpg" alt="التصنيف الأسبوعي">
+                    <img src="imagesdetail/image7 (11).jpg" alt="التصنيف الأسبوعي">
+                </div>
+            </div>
+
+            <a href="../index.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة للرئيسية</a>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anime Garden. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/dark-mode.js" defer></script>
+</body>
+</html>

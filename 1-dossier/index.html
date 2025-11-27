@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#6a11cb">
+    <meta name="description" content="أنمي فان - بوابة أخبار الأنمي والمانجا العربية. آخر الأخبار، المراجعات، والمقابلات الحصرية من عالم الأنمي والمانجا.">
+    <title>Anime Garden</title>
+    <link rel="icon" type="image/png" href="images/Basmato (1).png">
+    <link rel="apple-touch-icon" href="images/Basmato (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">تخطي إلى المحتوى</a>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Anime Garden</h1>
+                        <span>بوابة الأنمي والمانجا العربية</span>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-pressed="false" aria-label="تبديل الوضع الداكن">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                    <button class="search-toggle" aria-label="فتح البحث">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="قائمة الهاتف المتحرك">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    
+                    <li><a href="#">أخبار</a></li>
+                    
+                   
+                    <li><a href="about.html">عن الموقع</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <button class="close-search">
+                <i class="fas fa-times"></i>
+            </button>
+            <form class="search-form">
+                <input type="text" name="q" placeholder="ابحث في الأنمي، المانجا، الأخبار..." dir="rtl" aria-label="بحث الموقع">
+                <button type="submit" aria-label="إرسال بحث">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Featured Carousel -->
+    <section class="featured-carousel">
+        <div class="container">
+            <div class="carousel-wrapper">
+                <div class="carousel-items">
+                    <a href="newsdetails/news1.html" class="carousel-item active">
+                        <img src="images/image1.png" alt="أفضل أنميات الموسم">
+                        <div class="carousel-content">
+                            <span class="category">أخبار</span>
+                            <h2>قائمة أفضل أنمي لعام 2025</h2>
+                        </div>
+                    </a>
+                    <a href="newsdetails/news2.html" class="carousel-item">
+                        <img src="images/image2.png" alt="مانجا جديدة">
+                        <div class="carousel-content">
+                            <span class="category">أخبار</span>
+                            <h2>الأنميات المؤهلة لجوائز الأوسكار 2026</h2>
+                        </div>
+                    </a>
+                    <a href="newsdetails/news3.html" class="carousel-item">
+                        <img src="images/image3.png" alt="مقابلة حصرية">
+                        <div class="carousel-content">
+                            <span class="category">تحليل</span>
+                            <h2>التصنيف الأسبوعي</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-tabs">
+                    <button class="carousel-tab active" data-index="0"></button>
+                    <button class="carousel-tab" data-index="1"></button>
+                    <button class="carousel-tab" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Articles Grid -->
+                <section class="articles-grid">
+                    <h2 class="section-title">آخر الأخبار</h2>
+                    
+                    <div class="articles-container">
+                        <!-- Article 1 -->
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="images/image4.png" alt="أنمي جديد">
+                                <span class="category-tag">أنمي</span>
+                            </div>
+                            <div class="article-content">
+                                <h3>اتُهم One Punch Man باستخدام الذكاء الاصطناعي من قبل المعجبين الذين لاحظوا وجود ستة أصابع.</h3>
+                                <p>اتُهم One Punch Man باستخدام الذكاء الاصطناعي من قبل المعجبين الذين لاحظوا وجود ستة أصابع.</p>
+                                <div class="article-meta">
+                                    <span class="date"><i class="far fa-clock"></i>25/11/2025</span>
+                                    
+                                </div>
+                            </div>
+                        </article>
+
+                        
+                    <!-- Sidebar
+                    <div class="load-more-container">
+                        <button class="load-more-btn">تحميل المزيد</button>
+                    </div>
+                </section>-->
+
+                <!-- Sidebar
+                <aside class="sidebar">-->
+                    <!-- Popular Posts 
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">الأكثر مشاهدة</h3>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <span class="rank">1</span>
+                                <div class="post-content">
+                                    <h4><a href="popular-1.html">نهاية Attack on Titan: تحليل مفصل</a></h4>
+                                    <span class="views">2.4K مشاهدة</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <span class="rank">2</span>
+                                <div class="post-content">
+                                    <h4><a href="popular-2.html">أفضل 10 أنميات يجب مشاهدتها في 2024</a></h4>
+                                    <span class="views">1.8K مشاهدة</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <span class="rank">3</span>
+                                <div class="post-content">
+                                    <h4><a href="popular-3.html">كيفية بدء قراءة المانجا للمبتدئين</a></h4>
+                                    <span class="views">1.5K مشاهدة</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <span class="rank">4</span>
+                                <div class="post-content">
+                                    <h4><a href="popular-4.html">مقابلة مع مؤلف Spy x Family</a></h4>
+                                    <span class="views">1.3K مشاهدة</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <span class="rank">5</span>
+                                <div class="post-content">
+                                    <h4><a href="popular-5.html">توقعات موسم الصيف 2024</a></h4>
+                                    <span class="views">1.1K مشاهدة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+ 
+                    <!-- Categories 
+                    <div class="sidebar-widget">
+                        <h3 class="widget-title">التصنيفات</h3>
+                        <ul class="categories-list">
+                            <li><a href="anime.html">أنمي <span class="count">128</span></a></li>
+                            <li><a href="manga.html">مانجا <span class="count">95</span></a></li>
+                            <li><a href="news.html">أخبار <span class="count">76</span></a></li>
+                            <li><a href="reviews.html">مراجعات <span class="count">54</span></a></li>
+                            <li><a href="movies.html">أفلام <span class="count">42</span></a></li>
+                            <li><a href="games.html">ألعاب <span class="count">38</span></a></li>
+                            <li><a href="interviews.html">مقابلات <span class="count">25</span></a></li>
+                            <li><a href="events.html">فعاليات <span class="count">19</span></a></li>
+                        </ul>
+                    </div>-->
+
+                    
+
+                    
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Anime Garden</h3>
+                        <p>بوابة الأنمي والمانجا العربية الأولى</p>
+                    </div>
+                    <p class="footer-description">
+                        موقع متخصص في أخبار ومراجعات الأنمي والمانجا للجمهور العربي. نقدم محتوى عالي الجودة بشغف واهتمام.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">عن الموقع</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>التصنيفات</h4>
+                    <ul class="footer-links">
+                       
+                        <li><a href="#">أخبار</a></li>
+                        
+                        
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>اتصل بنا</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> japanall@gmail.com</p>
+                        <div class="social-links">
+                            
+                            <a href="https://www.instagram.com/anime.gardenfamily/"><i class="fab fa-instagram"></i></a>
+                            
+                            <a href="https://web.facebook.com/share/g/1736CEb93K/"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Anime Garden. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/dark-mode.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
